@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chany.lab3_2.MainActivity"
+    android:stretchColumns="2">
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성명" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""/>
+
+
+
+    </TableRow>
+
+    <TableRow>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성별" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/maleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남자"/>
+
+            <RadioButton
+                android:id="@+id/femaleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여자" />
+
+        </RadioGroup>
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수신 여부" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+
+                android:id="@+id/smsBox"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="SMS" />
+
+            <CheckBox
+                android:id="@+id/emailBox"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="e-mail" />
+
+
+
+
+        </LinearLayout>
+
+    </TableRow>
+
+    <RelativeLayout>
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:text="등록"
+       android:layout_alignParentRight="true"
+        />
+
+    </RelativeLayout>
+
+
+</TableLayout>
